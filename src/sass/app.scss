@@ -1,0 +1,162 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+
+$info: #368df6;
+$warning: #ff6900;
+$danger: #292f35;
+$success: #f8fafb;
+$dark-pink: #f6368a;
+$light-pink: #fba0c8;
+
+$primary: $dark-pink;
+$secondary: $light-pink;
+
+$card-footer-border-top: 1em solid 1em;
+$card-shadow: 0 4px 6px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
+$tabs-link-active-border-bottom-color: $primary;
+
+@import "node_modules/bulma/bulma";
+
+
+.cards.columns.is-mobile {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+
+}
+
+body {
+    background-color: $success;
+}
+
+.hero-head {
+    padding-top: 1em;
+}
+
+.back-link {
+    position: absolute;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.nav-logo {
+    max-width: 50%;
+}
+.logo-wrapper {
+    display: block;
+}
+.logo {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+.logo-details, .details {
+    @media (min-width:481px) {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+        color: white;
+    }
+    color: grey;
+}
+.hero.is-danger {
+    @media (max-width:480px) {
+        color: grey;
+        background-color: white;
+        .hero-body {
+            padding: 0 !important;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.left-arrow {
+    -moz-transform: rotate(180deg);  /* FF3.5/3.6 */
+    -o-transform: rotate(180deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(180deg);  /* Saf3.1+ */
+    transform: rotate(180deg);  /* Newer browsers (incl IE9) */
+    @media (min-width:481px) {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+    }
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #c97932;
+    margin: 25px auto;
+    display: block;
+    position:relative;
+    bottom:25px;
+    display: none;
+}
+
+
+.heart {
+    -webkit-filter: brightness(0.5) invert(0.5);
+    filter: brightness(0.5) invert(0.5);
+}
+
+.is-icon {
+    font-size: 4em;
+}
+.is-secondary {
+    background-color: $secondary;
+    color: findColorInvert($secondary);
+}
+.has-text-secondary {
+    color: $secondary;
+}
+.is-secondary-inverted {
+    background-color: findColorInvert($secondary);
+    color: $secondary;
+}
+
+.columns .column {
+    padding: 3em;
+}
+
+.card {
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.avatar {
+    z-index: 9;
+    top: 4px;
+    left: 1px;
+}
+.avatar-wrapper {
+    width: 50px;
+    height: 50px;
+    background: $info;
+   -moz-border-radius: 25px; 
+   -webkit-border-radius: 25px; 
+   border-radius: 25px;
+}
+
+.likes-wrapper {
+    position: relative;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    margin-top: -3.5em;
+    background: $primary;
+   -moz-border-radius: 25px; 
+   -webkit-border-radius: 25px; 
+   border-radius: 25px;
+}
+.pink-heart {
+    -webkit-filter: brightness(0.5) invert(0.5);
+    filter: brightness(0.5) invert(0.5);
+    z-index: 999;
+    top: 0.8em;
+    left: 0.75em;
+}
+
+.likes-count {
+    padding-top: 1em;
+    padding-left: 1.5em;
+}

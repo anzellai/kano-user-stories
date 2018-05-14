@@ -1,0 +1,30 @@
+{
+  "name": "kano-user-stories",
+  "version": "1.0.0",
+  "description": "Kano user stories frontend challenge",
+  "main": "src/Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anzellai/kano-user-stories.git"
+  },
+  "author": "Anzel Lai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anzellai/kano-user-stories/issues"
+  },
+  "homepage": "https://github.com/anzellai/kano-user-stories#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-elm": "^0.7.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
